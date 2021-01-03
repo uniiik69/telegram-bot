@@ -410,14 +410,14 @@ send_MDmessage($chat_id, "***Input Url= $shorturl
 
      ///Send Message (Global)
     function send_message($chat_id, $message){
-        $apiToken =  "API_TOKEN";
+        $apiToken =  "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";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text");
     }
     
 //Send Messages with Markdown (Global)
       function send_MDmessage($chat_id, $message){
-       $apiToken =  "API_TOKEN";
+       $apiToken =  "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";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text&parse_mode=Markdown");
     }
@@ -425,7 +425,7 @@ send_MDmessage($chat_id, "***Input Url= $shorturl
 
 ///Send Message to Channel
       function send_Cmessage($channel_id, $message){
-       $apiToken =  "API_TOKEN";
+       $apiToken =  "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";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$channel_id&text=$text");
     }
